@@ -65,7 +65,7 @@ export default function Component() {
   return (
     <div className="flex justify-center items-center min-h-screen mb-10" ref={containerRef}>
       <motion.main
-        className={`${nunito.className} relative z-10 flex md:pt-[120px] pt-[80px] flex-col items-center min-h-screen w-full max-w-6xl px-4 flex flex-col justify-center`}
+        className={`${nunito.className} relative z-10 flex pt-[110px] md:pt-[120px] flex-col items-center min-h-screen w-full max-w-6xl px-4 justify-center`}
         variants={containerVariants}
         initial="hidden"
         animate="visible"

@@ -38,6 +38,8 @@ const Navbar = () => {
     { href: "/projects", label: "Projects" },
   ];
 
+
+
   return (
     <nav
       className={` flex justify-between items-center text-[#E2E2E2] 
@@ -137,6 +139,10 @@ const Navbar = () => {
                 exit={{ y: -20, opacity: 0 }}
                 transition={{ delay: menuItems.length * 0.1 }}
                 className="mt-8 w-[185px] text-[#E2E2E2] font-medium h-[48px] border-2 border-solid border-[#fa4c38] rounded-full hover:text-black hover:border-[#E2E2E2] hover:bg-[#E2E2E2] transition-colors duration-200 cursor-pointer"
+                onClick={() => {
+                  router.push('/contact');
+                  toggleMenu();
+                }}
               >
                 Contact us
               </motion.button>

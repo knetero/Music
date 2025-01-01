@@ -269,7 +269,7 @@ export default function ContactForm() {
                       <SelectTrigger className="bg-gray-800 border-gray-700 text-white">
                         <SelectValue placeholder={t('selectServiceCategory')} />
                       </SelectTrigger>
-                      <SelectContent className='z-[20] bg-gray-800 absolute'>
+                      <SelectContent className='z-[20] bg-white absolute'>
                         {serviceCategories.map((category) => (
                           <SelectItem key={category} value={category.toLowerCase()}>{t(category.toLowerCase())}</SelectItem>
                         ))}
